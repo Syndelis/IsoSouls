@@ -3735,7 +3735,7 @@ material/1 = null
 material/2 = null
 
 [node name="RHand" type="BoneAttachment" parent="HumanArmature/Skeleton"]
-transform = Transform( -0.0212891, -0.125005, -0.991928, -0.058802, -0.990278, 0.12606, -0.998041, 0.0610121, 0.0137312, -1.08113, 1.63709, -0.179417 )
+transform = Transform( -0.0191988, -0.0767778, -0.996864, -0.0468802, -0.995881, 0.0776062, -0.998714, 0.0482242, 0.0155202, -0.937871, 1.62663, -0.221523 )
 bone_name = "Palm.R"
 
 [node name="Sword" type="MeshInstance" parent="HumanArmature/Skeleton/RHand"]
@@ -3760,38 +3760,39 @@ mesh = SubResource( 4 )
 material/0 = SubResource( 22 )
 
 [node name="Head" type="BoneAttachment" parent="HumanArmature/Skeleton"]
-transform = Transform( 0.999997, -0.00244316, -6.29706e-05, 0.0024427, 0.998288, 0.0584254, -7.99141e-05, -0.0584259, 0.998291, -2.99102e-09, 4.10225, 0.00230047 )
+transform = Transform( 0.999997, -0.00244329, -6.24599e-05, 0.00244325, 0.999996, -0.00117156, 6.52915e-05, 0.00117081, 0.999999, -1.4089e-07, 4.11789, -0.00805435 )
 bone_name = "Head"
 
 [node name="Anchor" type="Position3D" parent="HumanArmature/Skeleton/Head"]
 transform = Transform( 0.999997, 0.00243076, -0.000255136, -0.00244337, 0.991572, -0.12954, -6.19129e-05, 0.129541, 0.991575, 0.00223763, 0.917187, -0.0523918 )
 
 [node name="Body" type="BoneAttachment" parent="HumanArmature/Skeleton"]
-transform = Transform( 1, 5.27459e-09, 7.15237e-07, 0, 0.999973, -0.00737441, -7.15256e-07, 0.00737441, 0.999973, 0.0020506, 2.09921, 0.134697 )
+transform = Transform( 1, -4.46018e-09, 7.15259e-07, 5.53436e-09, 0.999999, -0.00150182, -7.15252e-07, 0.00150182, 0.999999, 0.00205057, 2.11675, 0.117157 )
 bone_name = "Body"
 
 [node name="Neck" type="BoneAttachment" parent="HumanArmature/Skeleton"]
-transform = Transform( 1, -2.41863e-08, 6.48427e-07, 6.80952e-08, 0.999983, -0.00571212, -6.81627e-07, 0.00571185, 0.999983, 4.99982e-09, 3.77711, 0.000443295 )
+transform = Transform( 1, -1.46261e-07, 1.16173e-06, 2.01916e-07, 0.999826, -0.0186368, -1.18796e-06, 0.0186365, 0.999826, -9.32934e-08, 3.7928, -0.0141139 )
 bone_name = "Neck"
 
-[node name="ShoulderPads" type="Position3D" parent="HumanArmature/Skeleton/Neck"]
+[node name="Anchor" type="Position3D" parent="HumanArmature/Skeleton/Neck"]
 transform = Transform( 1, 1.33624e-07, -7.41011e-07, -1.61595e-07, 0.999831, 0.0184048, 7.57758e-07, -0.0184046, 0.999831, 2.54888e-07, 0.105181, -0.159005 )
 
-[node name="ShoulderPads" type="MeshInstance" parent="HumanArmature/Skeleton/Neck/ShoulderPads"]
+[node name="ShoulderPads" type="MeshInstance" parent="HumanArmature/Skeleton/Neck/Anchor"]
 transform = Transform( 1, 8.88178e-16, 1.42109e-14, -3.33067e-15, 1, 0, 0, 0, 1, 0, 0, 0 )
+visible = false
 mesh = ExtResource( 9 )
 material/0 = null
 
 [node name="LShoulder" type="BoneAttachment" parent="HumanArmature/Skeleton"]
-transform = Transform( 0.598658, 0.801005, 8.74675e-07, -0.800899, 0.598579, 0.0162297, 0.0129997, -0.00971683, 0.999867, 0.324607, 3.46693, -0.105559 )
+transform = Transform( 0.598658, 0.801005, 1.38581e-06, -0.801, 0.598654, 0.00330469, 0.00264645, -0.00197959, 0.999993, 0.324607, 3.48402, -0.124117 )
 bone_name = "Shoulder.L"
 
 [node name="RShoulder" type="BoneAttachment" parent="HumanArmature/Skeleton"]
-transform = Transform( 0.598657, -0.801005, -1.09069e-06, 0.800899, 0.598579, 0.0162297, -0.0129996, -0.00971702, 0.999867, -0.329375, 3.4674, -0.0983797 )
+transform = Transform( 0.598657, -0.801005, -5.80191e-07, 0.801, 0.598654, 0.0033047, -0.00264695, -0.00197897, 0.999993, -0.329375, 3.4844, -0.116932 )
 bone_name = "Shoulder.R"
 
 [node name="LHand" type="BoneAttachment" parent="HumanArmature/Skeleton"]
-transform = Transform( -0.0199843, 0.0948357, 0.995292, 0.992841, 0.119132, 0.00858487, -0.117757, 0.988337, -0.0965379, 1.02029, 2.79767, 1.20167 )
+transform = Transform( -0.0199846, 0.0948362, 0.995292, 0.99428, 0.106348, 0.00983214, -0.104915, 0.989795, -0.0964194, 1.0203, 2.79791, 1.17435 )
 bone_name = "Palm.L"
 
 [node name="Torch" parent="HumanArmature/Skeleton/LHand" instance=ExtResource( 6 )]

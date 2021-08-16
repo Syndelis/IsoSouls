@@ -4,6 +4,8 @@ enum Type {Gear, Health, Sword}
 
 export(Type) var type
 export(String, FILE, "*.obj") var gear
+export(String, "Head", "Neck") var where
+
 var node_gear
 onready var anim = $AnimationPlayer
 
@@ -42,7 +44,7 @@ func interact():
 			match type:
 				
 				Type.Gear:
-					Global.Player.equip(node_gear, "Head")
+					Global.Player.equip(node_gear, where)
 				
 				Type.Health:
 					Global.Player.heal(4)
