@@ -65,6 +65,12 @@ func _physics_process(delta):
 				# Roll into direction ------------------------
 				inp = ROLL_MULT * motion.normalized()
 				motion += inp * ACC * delta
+				var v = Vector2(motion.x, motion.z).clamped(MAX_SPEED * 1.2)
+				
+				print(motion.length(), " ", v.length())
+				motion.x = v.x
+				motion.z = v.y
+				print(motion.length())
 				# --------------------------------------------
 				
 				# Roll into mouse ----------------------------
