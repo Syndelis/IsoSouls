@@ -212,6 +212,7 @@ func untrap(who):
 	
 func equip(what, where):
 	what.get_parent().remove_child(what)
+	print(where)
 	get_node("HumanArmature/Skeleton/" + where + "/Anchor").add_child(what)
 	maxhealth += 2
 	health += 2

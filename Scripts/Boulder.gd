@@ -11,6 +11,9 @@ func _on_Hitbox_body_entered(body):
 	if Global.isPlayer(body):
 		body.kill()
 		body.knock(transform.origin, 5)
+		
+	elif body.is_in_group("Enemy"):
+		body.hit(transform.origin)
 
 
 func _on_BoulderKillBox_body_entered(body):

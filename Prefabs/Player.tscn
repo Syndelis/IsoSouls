@@ -3735,7 +3735,7 @@ material/1 = null
 material/2 = null
 
 [node name="RHand" type="BoneAttachment" parent="HumanArmature/Skeleton"]
-transform = Transform( -0.0191988, -0.0767778, -0.996864, -0.0468802, -0.995881, 0.0776062, -0.998714, 0.0482242, 0.0155202, -0.937871, 1.62663, -0.221523 )
+transform = Transform( -0.0191912, -0.0766007, -0.996877, -0.0468049, -0.995898, 0.0774275, -0.998718, 0.0481458, 0.0155269, -0.937342, 1.62666, -0.221782 )
 bone_name = "Palm.R"
 
 [node name="Sword" type="MeshInstance" parent="HumanArmature/Skeleton/RHand"]
@@ -3760,18 +3760,18 @@ mesh = SubResource( 4 )
 material/0 = SubResource( 22 )
 
 [node name="Head" type="BoneAttachment" parent="HumanArmature/Skeleton"]
-transform = Transform( 0.999997, -0.00244329, -6.24599e-05, 0.00244325, 0.999996, -0.00117156, 6.52915e-05, 0.00117081, 0.999999, -1.4089e-07, 4.11789, -0.00805435 )
+transform = Transform( 0.999997, -0.00244329, -6.24145e-05, 0.00244322, 0.999995, -0.00153059, 6.61239e-05, 0.00152983, 0.999998, -1.32908e-07, 4.11799, -0.00811764 )
 bone_name = "Head"
 
 [node name="Anchor" type="Position3D" parent="HumanArmature/Skeleton/Head"]
 transform = Transform( 0.999997, 0.00243076, -0.000255136, -0.00244337, 0.991572, -0.12954, -6.19129e-05, 0.129541, 0.991575, 0.00223763, 0.917187, -0.0523918 )
 
 [node name="Body" type="BoneAttachment" parent="HumanArmature/Skeleton"]
-transform = Transform( 1, -4.46018e-09, 7.15259e-07, 5.53436e-09, 0.999999, -0.00150182, -7.15252e-07, 0.00150182, 0.999999, 0.00205057, 2.11675, 0.117157 )
+transform = Transform( 1, -4.48585e-09, 7.15259e-07, 5.53436e-09, 0.999999, -0.00146593, -7.15252e-07, 0.00146593, 0.999999, 0.00205057, 2.11686, 0.11705 )
 bone_name = "Body"
 
 [node name="Neck" type="BoneAttachment" parent="HumanArmature/Skeleton"]
-transform = Transform( 1, -1.46261e-07, 1.16173e-06, 2.01916e-07, 0.999826, -0.0186368, -1.18796e-06, 0.0186365, 0.999826, -9.32934e-08, 3.7928, -0.0141139 )
+transform = Transform( 1, -1.40509e-07, 1.20695e-06, 2.00043e-07, 0.999825, -0.0187158, -1.23265e-06, 0.0187155, 0.999824, -8.71845e-08, 3.7929, -0.0142029 )
 bone_name = "Neck"
 
 [node name="Anchor" type="Position3D" parent="HumanArmature/Skeleton/Neck"]
@@ -3784,15 +3784,15 @@ mesh = ExtResource( 9 )
 material/0 = null
 
 [node name="LShoulder" type="BoneAttachment" parent="HumanArmature/Skeleton"]
-transform = Transform( 0.598658, 0.801005, 1.38581e-06, -0.801, 0.598654, 0.00330469, 0.00264645, -0.00197959, 0.999993, 0.324607, 3.48402, -0.124117 )
+transform = Transform( 0.598658, 0.801005, 1.43115e-06, -0.801, 0.598654, 0.0032257, 0.00258316, -0.00193234, 0.999994, 0.324607, 3.48412, -0.12423 )
 bone_name = "Shoulder.L"
 
 [node name="RShoulder" type="BoneAttachment" parent="HumanArmature/Skeleton"]
-transform = Transform( 0.598657, -0.801005, -5.80191e-07, 0.801, 0.598654, 0.0033047, -0.00264695, -0.00197897, 0.999993, -0.329375, 3.4844, -0.116932 )
+transform = Transform( 0.598657, -0.801005, -5.3486e-07, 0.801, 0.598654, 0.00322571, -0.00258372, -0.00193164, 0.999994, -0.329375, 3.4845, -0.117045 )
 bone_name = "Shoulder.R"
 
 [node name="LHand" type="BoneAttachment" parent="HumanArmature/Skeleton"]
-transform = Transform( -0.0199846, 0.0948362, 0.995292, 0.99428, 0.106348, 0.00983214, -0.104915, 0.989795, -0.0964194, 1.0203, 2.79791, 1.17435 )
+transform = Transform( -0.0199847, 0.0948363, 0.995292, 0.994288, 0.10627, 0.00983976, -0.104836, 0.989803, -0.0964186, 1.0203, 2.79791, 1.17419 )
 bone_name = "Palm.L"
 
 [node name="Torch" parent="HumanArmature/Skeleton/LHand" instance=ExtResource( 6 )]
