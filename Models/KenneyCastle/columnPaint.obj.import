@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/columnPaint.obj-bb2747e260a6fa0f6847be08e1db0e5c.mesh"
+
+[deps]
+
+files=[ "res://.import/columnPaint.obj-bb2747e260a6fa0f6847be08e1db0e5c.mesh" ]
+
+source_file="res://Models/KenneyCastle/columnPaint.obj"
+dest_files=[ "res://.import/columnPaint.obj-bb2747e260a6fa0f6847be08e1db0e5c.mesh", "res://.import/columnPaint.obj-bb2747e260a6fa0f6847be08e1db0e5c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

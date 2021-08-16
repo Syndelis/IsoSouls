@@ -1,0 +1,163 @@
+[gd_scene load_steps=25 format=2]
+
+[ext_resource path="res://Particles/fire_01.png" type="Texture" id=1]
+[ext_resource path="res://Particles/smoke_04.png" type="Texture" id=2]
+[ext_resource path="res://Particles/smoke_09.png" type="Texture" id=3]
+[ext_resource path="res://Scripts/RealFireBall.gd" type="Script" id=4]
+
+[sub_resource type="SphereShape" id=1]
+radius = 0.491221
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_color = Color( 1, 0.4, 0.0588235, 1 )
+
+[sub_resource type="SphereMesh" id=3]
+material = SubResource( 2 )
+radius = 0.45
+height = 0.9
+
+[sub_resource type="SpatialMaterial" id=4]
+params_point_size = 12.7
+params_use_alpha_scissor = true
+params_alpha_scissor_threshold = 0.05
+albedo_color = Color( 0.968627, 0.423529, 0.0588235, 1 )
+albedo_texture = ExtResource( 3 )
+uv1_offset = Vector3( 0.519994, 0.519994, 0.519994 )
+uv2_offset = Vector3( 0.519994, 0.519994, 0.519994 )
+
+[sub_resource type="SphereMesh" id=5]
+material = SubResource( 4 )
+radius = 0.48
+height = 0.96
+rings = 64
+
+[sub_resource type="Gradient" id=6]
+offsets = PoolRealArray( 0, 0.00198807, 1 )
+colors = PoolColorArray( 0, 0, 0, 1, 0.947141, 0.96582, 0.230137, 1, 1, 0, 0, 1 )
+
+[sub_resource type="GradientTexture" id=7]
+gradient = SubResource( 6 )
+
+[sub_resource type="Curve" id=8]
+_data = [ Vector2( 0, 0.568182 ), 0.0, 0.0, 0, 0, Vector2( 0.507605, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 0 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=9]
+curve = SubResource( 8 )
+
+[sub_resource type="ParticlesMaterial" id=10]
+lifetime_randomness = 0.3
+emission_shape = 1
+emission_sphere_radius = 0.2
+spread = 0.0
+gravity = Vector3( 0, 70, 0 )
+angular_velocity = 30.0
+angular_velocity_random = 1.0
+linear_accel = 4.0
+angle = 360.0
+angle_random = 1.0
+scale = 2.0
+scale_curve = SubResource( 9 )
+color_ramp = SubResource( 7 )
+
+[sub_resource type="SpatialMaterial" id=11]
+flags_unshaded = true
+vertex_color_use_as_albedo = true
+params_blend_mode = 1
+params_billboard_mode = 3
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+albedo_texture = ExtResource( 1 )
+
+[sub_resource type="QuadMesh" id=12]
+material = SubResource( 11 )
+
+[sub_resource type="Gradient" id=13]
+offsets = PoolRealArray( 0, 0.551601, 1 )
+colors = PoolColorArray( 0, 0, 0, 1, 0.552941, 0.552941, 0.552941, 0, 1, 1, 1, 0 )
+
+[sub_resource type="GradientTexture" id=14]
+gradient = SubResource( 13 )
+
+[sub_resource type="Curve" id=15]
+_data = [ Vector2( 0, 0.568182 ), 0.0, 0.0, 0, 0, Vector2( 0.507605, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 0 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=16]
+curve = SubResource( 15 )
+
+[sub_resource type="ParticlesMaterial" id=17]
+lifetime_randomness = 0.4
+emission_shape = 1
+emission_sphere_radius = 0.2
+spread = 0.0
+gravity = Vector3( 0, 0.3, 0 )
+angular_velocity = 30.0
+angular_velocity_random = 1.0
+linear_accel = 4.0
+angle = 360.0
+angle_random = 1.0
+scale = 2.0
+scale_random = 0.3
+scale_curve = SubResource( 16 )
+color_ramp = SubResource( 14 )
+
+[sub_resource type="SpatialMaterial" id=18]
+flags_transparent = true
+flags_unshaded = true
+vertex_color_use_as_albedo = true
+params_blend_mode = 1
+params_billboard_mode = 3
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+albedo_texture = ExtResource( 2 )
+
+[sub_resource type="QuadMesh" id=19]
+material = SubResource( 18 )
+
+[sub_resource type="SphereShape" id=20]
+radius = 0.752365
+
+[node name="RealFireBall" type="RigidBody" groups=[
+"Fireball",
+]]
+mass = 5.0
+script = ExtResource( 4 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0, 0 )
+shape = SubResource( 1 )
+
+[node name="MeshInstance2" type="MeshInstance" parent="CollisionShape"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="MeshInstance" type="MeshInstance" parent="CollisionShape"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0104084, 0, -0.0155194 )
+mesh = SubResource( 5 )
+material/0 = null
+
+[node name="Flames" type="Particles" parent="CollisionShape"]
+transform = Transform( 1, 0, 0, 0, 1, -8.35187e-23, 0, -8.35187e-23, 1, 0, 0, 0 )
+amount = 16
+lifetime = 0.3
+randomness = 0.3
+local_coords = false
+process_material = SubResource( 10 )
+draw_pass_1 = SubResource( 12 )
+
+[node name="Smoke" type="Particles" parent="CollisionShape"]
+transform = Transform( 1, 0, 0, 0, 1, -8.35187e-23, 0, -8.35187e-23, 1, 0, 0, 0 )
+amount = 32
+lifetime = 2.0
+randomness = 0.3
+local_coords = false
+process_material = SubResource( 17 )
+draw_pass_1 = SubResource( 19 )
+
+[node name="Hitbox" type="Area" parent="CollisionShape"]
+
+[node name="CollisionShape" type="CollisionShape" parent="CollisionShape/Hitbox"]
+shape = SubResource( 20 )
+
+[connection signal="body_entered" from="CollisionShape/Hitbox" to="." method="_on_Hitbox_body_entered"]

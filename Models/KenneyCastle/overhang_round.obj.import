@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/overhang_round.obj-d7663b75a33d514a45650a9823e883c6.mesh"
+
+[deps]
+
+files=[ "res://.import/overhang_round.obj-d7663b75a33d514a45650a9823e883c6.mesh" ]
+
+source_file="res://Models/KenneyCastle/overhang_round.obj"
+dest_files=[ "res://.import/overhang_round.obj-d7663b75a33d514a45650a9823e883c6.mesh", "res://.import/overhang_round.obj-d7663b75a33d514a45650a9823e883c6.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

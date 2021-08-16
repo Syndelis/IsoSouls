@@ -1,0 +1,122 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Models/KenneyCastle/Textures/bricks.png" type="Texture" id=1]
+[ext_resource path="res://Models/KenneyCastle/Textures/stones.png" type="Texture" id=2]
+
+[sub_resource type="SpatialMaterial" id=1]
+resource_name = "bricks"
+flags_transparent = true
+albedo_texture = ExtResource( 1 )
+
+[sub_resource type="SpatialMaterial" id=2]
+resource_name = "stones"
+flags_transparent = true
+albedo_texture = ExtResource( 2 )
+
+[sub_resource type="ArrayMesh" id=3]
+surfaces/0 = {
+"aabb": AABB( -0.5, 0.05, -0.5, 1.00001, 9.99868e-06, 1.00001 ),
+"array_data": PoolByteArray( 0, 0, 0, 63, 205, 204, 76, 61, 0, 0, 0, 63, 0, 127, 0, 0, 129, 0, 0, 127, 0, 188, 0, 60, 0, 0, 0, 191, 205, 204, 76, 61, 0, 0, 0, 191, 0, 127, 0, 0, 129, 0, 0, 127, 0, 0, 0, 64, 0, 0, 0, 63, 205, 204, 76, 61, 0, 0, 0, 191, 0, 127, 0, 0, 129, 0, 0, 127, 0, 188, 0, 64, 0, 0, 0, 191, 205, 204, 76, 61, 0, 0, 0, 63, 0, 127, 0, 0, 129, 0, 0, 127, 0, 0, 0, 60 ),
+"array_index_data": PoolByteArray( 0, 0, 1, 0, 2, 0, 1, 0, 0, 0, 3, 0 ),
+"blend_shape_data": [  ],
+"format": 97559,
+"index_count": 6,
+"material": SubResource( 1 ),
+"name": "bricks",
+"primitive": 4,
+"skeleton_aabb": [  ],
+"vertex_count": 4
+}
+surfaces/1 = {
+"aabb": AABB( -0.5, 0, -0.5, 1, 0.05, 1.00001 ),
+"array_data": PoolByteArray( 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 127, 0, 127, 0, 0, 127, 0, 48, 0, 60, 0, 0, 0, 63, 205, 204, 76, 61, 0, 0, 0, 63, 0, 0, 127, 0, 127, 0, 0, 127, 128, 60, 153, 59, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 127, 0, 127, 0, 0, 127, 128, 60, 0, 60, 0, 0, 0, 191, 205, 204, 76, 61, 0, 0, 0, 63, 0, 0, 127, 0, 127, 0, 0, 127, 0, 48, 153, 59, 0, 0, 0, 191, 205, 204, 76, 61, 0, 0, 0, 191, 129, 0, 0, 0, 0, 0, 127, 127, 0, 187, 153, 59, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 63, 129, 0, 0, 0, 0, 0, 127, 127, 0, 48, 0, 60, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 191, 129, 0, 0, 0, 0, 0, 127, 127, 0, 187, 0, 60, 0, 0, 0, 191, 205, 204, 76, 61, 0, 0, 0, 63, 129, 0, 0, 0, 0, 0, 127, 127, 0, 48, 153, 59, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 191, 127, 0, 0, 0, 0, 0, 129, 127, 0, 176, 0, 60, 0, 0, 0, 63, 205, 204, 76, 61, 0, 0, 0, 63, 127, 0, 0, 0, 0, 0, 129, 127, 128, 188, 153, 59, 0, 0, 0, 63, 205, 204, 76, 61, 0, 0, 0, 191, 127, 0, 0, 0, 0, 0, 129, 127, 0, 176, 153, 59, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 63, 127, 0, 0, 0, 0, 0, 129, 127, 128, 188, 0, 60, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 129, 0, 129, 0, 0, 127, 0, 188, 102, 58, 0, 0, 0, 191, 205, 204, 76, 61, 0, 0, 0, 191, 0, 0, 129, 0, 129, 0, 0, 127, 0, 0, 0, 58, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 129, 0, 129, 0, 0, 127, 0, 0, 102, 58, 0, 0, 0, 63, 205, 204, 76, 61, 0, 0, 0, 191, 0, 0, 129, 0, 129, 0, 0, 127, 0, 188, 0, 58 ),
+"array_index_data": PoolByteArray( 0, 0, 1, 0, 2, 0, 1, 0, 0, 0, 3, 0, 4, 0, 5, 0, 6, 0, 5, 0, 4, 0, 7, 0, 8, 0, 9, 0, 10, 0, 9, 0, 8, 0, 11, 0, 12, 0, 13, 0, 14, 0, 13, 0, 12, 0, 15, 0 ),
+"blend_shape_data": [  ],
+"format": 97559,
+"index_count": 24,
+"material": SubResource( 2 ),
+"name": "stones",
+"primitive": 4,
+"skeleton_aabb": [  ],
+"vertex_count": 16
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "Disappear"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:mesh:surface_1/material:albedo_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:mesh:surface_2/material:albedo_color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath("..")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 1 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "queue_free"
+} ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "Idle"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:mesh:surface_1/material:albedo_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:mesh:surface_2/material:albedo_color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+
+[node name="HiddenCeiling" type="Spatial"]
+
+[node name="floor" type="MeshInstance" parent="."]
+mesh = SubResource( 3 )
+material/0 = null
+material/1 = null
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="floor"]
+anims/Disappear = SubResource( 4 )
+anims/Idle = SubResource( 5 )

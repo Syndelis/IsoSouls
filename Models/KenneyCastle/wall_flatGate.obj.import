@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/wall_flatGate.obj-ca46dea7ea32e470e266ebbea21db705.mesh"
+
+[deps]
+
+files=[ "res://.import/wall_flatGate.obj-ca46dea7ea32e470e266ebbea21db705.mesh" ]
+
+source_file="res://Models/KenneyCastle/wall_flatGate.obj"
+dest_files=[ "res://.import/wall_flatGate.obj-ca46dea7ea32e470e266ebbea21db705.mesh", "res://.import/wall_flatGate.obj-ca46dea7ea32e470e266ebbea21db705.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

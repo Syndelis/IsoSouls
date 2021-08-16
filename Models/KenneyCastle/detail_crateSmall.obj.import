@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/detail_crateSmall.obj-95ad5b27422e01d1ccc8dd51d385a165.mesh"
+
+[deps]
+
+files=[ "res://.import/detail_crateSmall.obj-95ad5b27422e01d1ccc8dd51d385a165.mesh" ]
+
+source_file="res://Models/KenneyCastle/detail_crateSmall.obj"
+dest_files=[ "res://.import/detail_crateSmall.obj-95ad5b27422e01d1ccc8dd51d385a165.mesh", "res://.import/detail_crateSmall.obj-95ad5b27422e01d1ccc8dd51d385a165.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

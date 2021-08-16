@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/wallFortified_gateHalf.obj-6a4653e64c400a63c40a06febf6e717e.mesh"
+
+[deps]
+
+files=[ "res://.import/wallFortified_gateHalf.obj-6a4653e64c400a63c40a06febf6e717e.mesh" ]
+
+source_file="res://Models/KenneyCastle/wallFortified_gateHalf.obj"
+dest_files=[ "res://.import/wallFortified_gateHalf.obj-6a4653e64c400a63c40a06febf6e717e.mesh", "res://.import/wallFortified_gateHalf.obj-6a4653e64c400a63c40a06febf6e717e.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

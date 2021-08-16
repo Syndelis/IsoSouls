@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/detail_barrel.obj-4c27e4506c373f966da5cb58b7c2344c.mesh"
+
+[deps]
+
+files=[ "res://.import/detail_barrel.obj-4c27e4506c373f966da5cb58b7c2344c.mesh" ]
+
+source_file="res://Models/KenneyCastle/detail_barrel.obj"
+dest_files=[ "res://.import/detail_barrel.obj-4c27e4506c373f966da5cb58b7c2344c.mesh", "res://.import/detail_barrel.obj-4c27e4506c373f966da5cb58b7c2344c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/roof.obj-34200a120dc285219f52d4e472a2c79a.mesh"
+
+[deps]
+
+files=[ "res://.import/roof.obj-34200a120dc285219f52d4e472a2c79a.mesh" ]
+
+source_file="res://Models/KenneyCastle/roof.obj"
+dest_files=[ "res://.import/roof.obj-34200a120dc285219f52d4e472a2c79a.mesh", "res://.import/roof.obj-34200a120dc285219f52d4e472a2c79a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

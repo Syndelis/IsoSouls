@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/towerPaint_base.obj-f224a404e2b154c40c93ec526d2736c9.mesh"
+
+[deps]
+
+files=[ "res://.import/towerPaint_base.obj-f224a404e2b154c40c93ec526d2736c9.mesh" ]
+
+source_file="res://Models/KenneyCastle/towerPaint_base.obj"
+dest_files=[ "res://.import/towerPaint_base.obj-f224a404e2b154c40c93ec526d2736c9.mesh", "res://.import/towerPaint_base.obj-f224a404e2b154c40c93ec526d2736c9.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

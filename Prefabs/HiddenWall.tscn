@@ -1,0 +1,56 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Models/KenneyCastle/wallPaint_half.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://Scripts/HiddenWall.gd" type="Script" id=2]
+
+[sub_resource type="ConvexPolygonShape" id=1]
+points = PoolVector3Array( 0, 0, 0.5, 0.5, 1, 0.5, 0.5, 0, 0.5, 0, 1, 0.5, 0.5, 0, -0.5, 0.5, 1, 0.5, 0.5, 1, -0.5, 0.5, 0, 0.5, 0, 1, -0.5, 0, 0, 0.5, 0, 0, -0.5, 0, 1, 0.5, 0.5, 0, -0.5, 0, 1, -0.5, 0, 0, -0.5, 0.5, 1, -0.5, 0.5, 1, 0.5, 0, 1, -0.5, 0.5, 1, -0.5, 0, 1, 0.5, 0.5, 0, -0.5, 0, 0, 0.5, 0.5, 0, 0.5, 0, 0, -0.5 )
+
+[sub_resource type="Animation" id=3]
+resource_name = "Disappear"
+tracks/0/type = "value"
+tracks/0/path = NodePath("CollisionShape:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 1 ),
+"transitions": PoolRealArray( 0.241484, 2.37842, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( -0.386201, 0, 0 ), Vector3( -0.386201, -1.06851, 0 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "Idle"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("CollisionShape:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ) ]
+}
+
+[node name="HiddenWall" type="StaticBody" groups=[
+"Interactable",
+]]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0 )
+script = ExtResource( 2 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+shape = SubResource( 1 )
+
+[node name="wallPaint_half" type="MeshInstance" parent="CollisionShape"]
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Disappear = SubResource( 3 )
+anims/Idle = SubResource( 2 )

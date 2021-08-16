@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/ShoulderPads.obj-d25b9da3f875f21f138822a2a053a9a9.mesh"
+
+[deps]
+
+files=[ "res://.import/ShoulderPads.obj-d25b9da3f875f21f138822a2a053a9a9.mesh" ]
+
+source_file="res://Models/Equips/ShoulderPads/ShoulderPads.obj"
+dest_files=[ "res://.import/ShoulderPads.obj-d25b9da3f875f21f138822a2a053a9a9.mesh", "res://.import/ShoulderPads.obj-d25b9da3f875f21f138822a2a053a9a9.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/floor_stairs.obj-c5e6ddacf3e18a780a53ac734dec9604.mesh"
+
+[deps]
+
+files=[ "res://.import/floor_stairs.obj-c5e6ddacf3e18a780a53ac734dec9604.mesh" ]
+
+source_file="res://Models/KenneyCastle/floor_stairs.obj"
+dest_files=[ "res://.import/floor_stairs.obj-c5e6ddacf3e18a780a53ac734dec9604.mesh", "res://.import/floor_stairs.obj-c5e6ddacf3e18a780a53ac734dec9604.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

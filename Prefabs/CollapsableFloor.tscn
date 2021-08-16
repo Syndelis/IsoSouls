@@ -1,0 +1,180 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://Particles/smoke_04.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/CollaspableFloor.gd" type="Script" id=2]
+[ext_resource path="res://Models/Stuff/DungeonProps.material" type="Material" id=3]
+
+[sub_resource type="ArrayMesh" id=1]
+resource_name = "Dungeon_ground_tile3"
+surfaces/0 = {
+"aabb": AABB( -200, -5.00003, -200, 400, 10.0001, 400 ),
+"array_data": PoolByteArray( 0, 0, 72, 67, 188, 255, 159, 64, 0, 0, 72, 195, 127, 0, 0, 0, 0, 129, 0, 129, 219, 50, 144, 46, 0, 0, 72, 67, 188, 255, 159, 192, 0, 0, 72, 67, 127, 0, 0, 0, 0, 129, 0, 129, 112, 51, 104, 45, 0, 0, 72, 67, 68, 0, 160, 192, 0, 0, 72, 195, 127, 0, 0, 0, 0, 129, 0, 129, 112, 51, 144, 46, 0, 0, 72, 67, 68, 0, 160, 64, 0, 0, 72, 67, 127, 0, 0, 0, 0, 129, 0, 129, 219, 50, 104, 45, 0, 0, 72, 67, 68, 0, 160, 64, 0, 0, 72, 67, 0, 0, 127, 0, 0, 129, 0, 129, 219, 50, 104, 45, 0, 0, 72, 195, 188, 255, 159, 192, 0, 0, 72, 67, 0, 0, 127, 0, 0, 129, 0, 129, 112, 51, 64, 44, 0, 0, 72, 67, 188, 255, 159, 192, 0, 0, 72, 67, 0, 0, 127, 0, 0, 129, 0, 129, 112, 51, 104, 45, 0, 0, 72, 195, 68, 0, 160, 64, 0, 0, 72, 67, 0, 0, 127, 0, 0, 129, 0, 129, 219, 50, 64, 44, 0, 0, 72, 195, 68, 0, 160, 64, 0, 0, 72, 67, 130, 0, 0, 0, 0, 130, 0, 129, 219, 50, 64, 44, 0, 0, 72, 195, 68, 0, 160, 192, 0, 0, 72, 195, 130, 0, 0, 0, 0, 130, 0, 129, 112, 51, 47, 42, 0, 0, 72, 195, 188, 255, 159, 192, 0, 0, 72, 67, 129, 0, 0, 0, 0, 130, 0, 129, 112, 51, 64, 44, 0, 0, 72, 195, 188, 255, 159, 64, 0, 0, 72, 195, 129, 0, 0, 0, 0, 130, 0, 129, 219, 50, 47, 42, 0, 0, 72, 195, 188, 255, 159, 64, 0, 0, 72, 195, 0, 0, 129, 0, 0, 129, 0, 129, 219, 50, 47, 42, 0, 0, 72, 67, 68, 0, 160, 192, 0, 0, 72, 195, 0, 0, 129, 0, 0, 129, 0, 129, 112, 51, 190, 39, 0, 0, 72, 195, 68, 0, 160, 192, 0, 0, 72, 195, 0, 0, 129, 0, 0, 129, 0, 129, 112, 51, 47, 42, 0, 0, 72, 67, 188, 255, 159, 64, 0, 0, 72, 195, 0, 0, 129, 0, 0, 129, 0, 129, 219, 50, 190, 39, 0, 0, 72, 67, 68, 0, 160, 64, 0, 0, 72, 67, 0, 127, 0, 0, 129, 0, 0, 129, 18, 27, 15, 53, 0, 0, 72, 195, 188, 255, 159, 64, 0, 0, 72, 195, 0, 127, 0, 0, 129, 0, 0, 129, 18, 49, 48, 49, 0, 0, 72, 195, 68, 0, 160, 64, 0, 0, 72, 67, 0, 127, 0, 0, 129, 0, 0, 129, 18, 49, 15, 53, 0, 0, 72, 67, 188, 255, 159, 64, 0, 0, 72, 195, 0, 127, 0, 0, 129, 0, 0, 129, 18, 27, 48, 49, 0, 0, 72, 195, 188, 255, 159, 192, 0, 0, 72, 67, 0, 129, 0, 0, 127, 0, 0, 129, 112, 51, 64, 44, 0, 0, 72, 67, 68, 0, 160, 192, 0, 0, 72, 195, 0, 129, 0, 0, 127, 0, 0, 129, 2, 52, 47, 42, 0, 0, 72, 67, 188, 255, 159, 192, 0, 0, 72, 67, 0, 129, 0, 0, 127, 0, 0, 129, 2, 52, 64, 44, 0, 0, 72, 195, 68, 0, 160, 192, 0, 0, 72, 195, 0, 129, 0, 0, 127, 0, 0, 129, 112, 51, 47, 42 ),
+"array_index_data": PoolByteArray( 0, 0, 2, 0, 1, 0, 0, 0, 1, 0, 3, 0, 4, 0, 6, 0, 5, 0, 4, 0, 5, 0, 7, 0, 8, 0, 10, 0, 9, 0, 8, 0, 9, 0, 11, 0, 12, 0, 14, 0, 13, 0, 12, 0, 13, 0, 15, 0, 16, 0, 18, 0, 17, 0, 16, 0, 17, 0, 19, 0, 20, 0, 22, 0, 21, 0, 20, 0, 21, 0, 23, 0 ),
+"blend_shape_data": [  ],
+"format": 97559,
+"index_count": 36,
+"material": ExtResource( 3 ),
+"primitive": 4,
+"skeleton_aabb": [  ],
+"vertex_count": 24
+}
+
+[sub_resource type="ConvexPolygonShape" id=2]
+points = PoolVector3Array( 200, 4.99997, -200, 200, -4.99997, 200, 200, -5.00003, -200, 200, 5.00003, 200, 200, 5.00003, 200, -200, -4.99997, 200, 200, -4.99997, 200, -200, 5.00003, 200, -200, 5.00003, 200, -200, -5.00003, -200, -200, -4.99997, 200, -200, 4.99997, -200, -200, 4.99997, -200, 200, -5.00003, -200, -200, -5.00003, -200, 200, 4.99997, -200, 200, 5.00003, 200, -200, 4.99997, -200, -200, 5.00003, 200, 200, 4.99997, -200, -200, -4.99997, 200, 200, -5.00003, -200, 200, -4.99997, 200, -200, -5.00003, -200 )
+
+[sub_resource type="Gradient" id=3]
+offsets = PoolRealArray( 0, 0.796813, 1 )
+colors = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0 )
+
+[sub_resource type="GradientTexture" id=12]
+gradient = SubResource( 3 )
+
+[sub_resource type="Curve" id=5]
+_data = [ Vector2( 0, 0.568182 ), 0.0, 0.0, 0, 0, Vector2( 0.507605, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 0 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=13]
+curve = SubResource( 5 )
+
+[sub_resource type="ParticlesMaterial" id=7]
+lifetime_randomness = 0.6
+emission_shape = 2
+emission_box_extents = Vector3( 1.5, 0.1, 1.5 )
+direction = Vector3( 0, 1, 0 )
+gravity = Vector3( 0, 0.3, 0 )
+initial_velocity = 5.0
+initial_velocity_random = 1.0
+angular_velocity = 30.0
+angular_velocity_random = 1.0
+linear_accel = 4.0
+angle = 360.0
+angle_random = 1.0
+scale = 8.0
+scale_random = 0.3
+scale_curve = SubResource( 13 )
+color_ramp = SubResource( 12 )
+
+[sub_resource type="SpatialMaterial" id=14]
+flags_transparent = true
+flags_unshaded = true
+vertex_color_use_as_albedo = true
+params_blend_mode = 1
+params_billboard_mode = 3
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+albedo_texture = ExtResource( 1 )
+
+[sub_resource type="QuadMesh" id=9]
+material = SubResource( 14 )
+
+[sub_resource type="Animation" id=10]
+resource_name = "Collapse"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("Smoke:emitting")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CollisionShape:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.3 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Dungeon_ground_tile3:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 6.27667, 1 ),
+"update": 0,
+"values": [ Vector3( 0.01, 0.01, 0.01 ), Vector3( 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=11]
+resource_name = "Idle"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Dungeon_ground_tile3:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( 0.01, 0.01, 0.01 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CollisionShape:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Smoke:emitting")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[node name="CollapsableFloor" type="StaticBody" groups=[
+"Activatable",
+]]
+transform = Transform( 4, 0, 0, 0, 1, 0, 0, 0, 4, 0, 0, 0 )
+script = ExtResource( 2 )
+
+[node name="Dungeon_ground_tile3" type="MeshInstance" parent="."]
+transform = Transform( -0.01, 0, -1.50996e-09, 0, 0.01, 0, 1.50996e-09, 0, -0.01, 0, 0, 0 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( -0.01, 0, -8.74228e-10, 0, 0.01, 0, 8.74228e-10, 0, -0.01, 0, 0, 0 )
+shape = SubResource( 2 )
+
+[node name="Smoke" type="Particles" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, -8.35187e-23, 0, -8.35187e-23, 1, 0, 0, 0 )
+emitting = false
+amount = 128
+lifetime = 3.0
+one_shot = true
+speed_scale = 0.8
+explosiveness = 1.0
+visibility_aabb = AABB( -7.92061, -35.795, -7.80404, 15.8412, 71.59, 15.6081 )
+local_coords = false
+process_material = SubResource( 7 )
+draw_pass_1 = SubResource( 9 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Collapse = SubResource( 10 )
+anims/Idle = SubResource( 11 )

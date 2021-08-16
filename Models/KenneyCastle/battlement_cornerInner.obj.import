@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/battlement_cornerInner.obj-65a1369fdff55cb78f36c2cce419b86d.mesh"
+
+[deps]
+
+files=[ "res://.import/battlement_cornerInner.obj-65a1369fdff55cb78f36c2cce419b86d.mesh" ]
+
+source_file="res://Models/KenneyCastle/battlement_cornerInner.obj"
+dest_files=[ "res://.import/battlement_cornerInner.obj-65a1369fdff55cb78f36c2cce419b86d.mesh", "res://.import/battlement_cornerInner.obj-65a1369fdff55cb78f36c2cce419b86d.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

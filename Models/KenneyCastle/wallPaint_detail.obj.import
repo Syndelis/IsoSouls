@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/wallPaint_detail.obj-96af8b664d6ff4e9746ecccb953f0062.mesh"
+
+[deps]
+
+files=[ "res://.import/wallPaint_detail.obj-96af8b664d6ff4e9746ecccb953f0062.mesh" ]
+
+source_file="res://Models/KenneyCastle/wallPaint_detail.obj"
+dest_files=[ "res://.import/wallPaint_detail.obj-96af8b664d6ff4e9746ecccb953f0062.mesh", "res://.import/wallPaint_detail.obj-96af8b664d6ff4e9746ecccb953f0062.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

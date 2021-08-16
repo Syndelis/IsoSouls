@@ -1,0 +1,79 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Assets/Buttons/Gamepad Prompts.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Buttons/Keyboard Prompts.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/InteractPrompt.gd" type="Script" id=3]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Anim"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("PC:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 0, 1 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("PS4:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 0, 1 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Xbox:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 0, 1 ]
+}
+
+[node name="InteractPrompt" type="Spatial"]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0 )
+script = ExtResource( 3 )
+
+[node name="PC" type="Sprite3D" parent="."]
+visible = false
+billboard = 1
+texture = ExtResource( 2 )
+hframes = 2
+region_enabled = true
+region_rect = Rect2( 91.2004, 180.136, 54.4892, 11.052 )
+
+[node name="PS4" type="Sprite3D" parent="."]
+visible = false
+billboard = 1
+texture = ExtResource( 1 )
+hframes = 2
+region_enabled = true
+region_rect = Rect2( 26, 84, 23.0709, 12.0438 )
+
+[node name="Xbox" type="Sprite3D" parent="."]
+visible = false
+billboard = 1
+transparent = false
+texture = ExtResource( 1 )
+hframes = 2
+region_enabled = true
+region_rect = Rect2( 26, 21, 23, 12 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Anim = SubResource( 1 )
+
+[connection signal="visibility_changed" from="." to="." method="_on_InteractPrompt_visibility_changed"]

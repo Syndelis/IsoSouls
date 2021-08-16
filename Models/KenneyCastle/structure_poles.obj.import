@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/structure_poles.obj-063749ea1cae3608fa282c409c2b873f.mesh"
+
+[deps]
+
+files=[ "res://.import/structure_poles.obj-063749ea1cae3608fa282c409c2b873f.mesh" ]
+
+source_file="res://Models/KenneyCastle/structure_poles.obj"
+dest_files=[ "res://.import/structure_poles.obj-063749ea1cae3608fa282c409c2b873f.mesh", "res://.import/structure_poles.obj-063749ea1cae3608fa282c409c2b873f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

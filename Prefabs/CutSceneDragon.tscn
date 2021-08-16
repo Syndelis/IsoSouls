@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Prefabs/Dragon.tscn" type="PackedScene" id=1]
+
+[node name="CutSceneDragon" type="Spatial"]
+
+[node name="Dragon" parent="." instance=ExtResource( 1 )]
+script = null
+
+[node name="BoneAttachment" parent="Dragon/DragonArmature/Skeleton" index="0"]
+transform = Transform( -1, -7.79983e-09, -1.24134e-06, -1.21549e-06, -0.140911, 0.990021, -1.71829e-07, 0.990022, 0.14091, 0.00268525, 2.98362, 0.914714 )
+
+[node name="AnimationTree" parent="Dragon" index="3"]
+active = false
+
+[editable path="Dragon"]

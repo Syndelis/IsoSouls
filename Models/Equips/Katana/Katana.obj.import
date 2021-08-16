@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Katana.obj-c890bcb615a9d94262694298a3a5c94f.mesh"
+
+[deps]
+
+files=[ "res://.import/Katana.obj-c890bcb615a9d94262694298a3a5c94f.mesh" ]
+
+source_file="res://Models/Equips/Katana/Katana.obj"
+dest_files=[ "res://.import/Katana.obj-c890bcb615a9d94262694298a3a5c94f.mesh", "res://.import/Katana.obj-c890bcb615a9d94262694298a3a5c94f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

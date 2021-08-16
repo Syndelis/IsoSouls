@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Club.obj-7b29e92c94198bdf4b98bb02ae9226e1.mesh"
+
+[deps]
+
+files=[ "res://.import/Club.obj-7b29e92c94198bdf4b98bb02ae9226e1.mesh" ]
+
+source_file="res://Models/Equips/Club/Club.obj"
+dest_files=[ "res://.import/Club.obj-7b29e92c94198bdf4b98bb02ae9226e1.mesh", "res://.import/Club.obj-7b29e92c94198bdf4b98bb02ae9226e1.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
